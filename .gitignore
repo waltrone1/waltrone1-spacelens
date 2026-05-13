@@ -1,1 +1,87 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# PyInstaller / py2exe build output
+py2exe/build/
+py2exe/dist/
+py2exe/__pycache__/
+*.spec.bak
+
+# Executable and release files
+*.exe
+*.msi
+*.zip
+*.7z
+*.rar
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS system files
+.DS_Store
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test and coverage files
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Local configuration files
+.env
+.env.local
+config.local.json
+
+# Generated reports / exports
+exports/
+reports/
+*.csv
+*.json
+*.html
+
+# Keep repository folders
+!screenshots/
+!screenshots/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
+!screenshots/*.webp
+
+!docs/
+!docs/*.md
+
+# Keep important project files
+!requirements.txt
+!run.py
+!version_info.txt
+!waltrone1-SpaceLens.ico
+!LICENSE
+!README.md
+!CHANGELOG.md
