@@ -1,231 +1,231 @@
 # waltrone1 SpaceLens
 
-**waltrone1 SpaceLens** is a modern Windows storage analyzer for folders, drives and UNC paths.
+**waltrone1 SpaceLens** is a free Windows storage analysis and reporting tool by **WALTRONE**.
 
-It helps you understand where storage space is used by scanning a selected path and showing large folders, large files, file categories and possible duplicates in a clean desktop interface.
+It helps you analyze folders, drives and UNC paths, showing where storage space is used and which folders, files and categories take up the most space.
 
-Part of the **WALTRONE Community Tools** collection.
-
----
-
-## Screenshots
-
-### Main dashboard
-
-![waltrone1 SpaceLens main dashboard](screenshots/spacelens-main-dashboard.png)
-
-### Folder tree overview
-
-![waltrone1 SpaceLens folder tree](screenshots/spacelens-folder-tree.png)
-
-### Graph view
-
-![waltrone1 SpaceLens graph view](screenshots/spacelens-graph-view.png)
-
-### HTML report
-
-![waltrone1 SpaceLens HTML report](screenshots/spacelens-html-report.png)
-
----
-
-## Overview
-
-waltrone1 SpaceLens is designed for users who want a simple but powerful way to analyze storage usage on Windows systems.
-
-The tool can scan local folders, drives and network paths, then display the results in multiple views.
-
-It is useful for:
-
-- finding large folders
-- finding large files
-- understanding storage usage by category
-- checking old Windows folders
-- analyzing external drives
-- analyzing network paths
-- preparing storage cleanup decisions
-- creating HTML reports for documentation
+The tool is designed for Windows users, admins and technicians who want a clear overview of storage usage without manually checking many folders, properties windows or file locations.
 
 ---
 
 ## Features
 
-- Modern Windows desktop interface
-- Scan local folders, full drives and UNC network paths
-- Quick drive buttons for common paths
-- Show total size, file count and folder count
-- Display the largest folders
-- Display the largest files
-- Folder tree view with size, percentage, file count, folder count and path
+- Windows storage analysis for folders and drives
+- Support for local paths and UNC network paths
+- Quick drive selection buttons
+- Total size, file count and folder count overview
+- Folder tree with size, percentage, file count, folder count and path
+- Top folders overview
+- Top files overview
 - File category overview
 - Category detail view
 - Duplicate file detection
-- Export scan results as CSV
-- Export scan results as JSON
-- Generate an HTML report
-- Open a larger graphical overview after a scan
-- Graph view with visual folder usage overview
-- Error summary for permission or access problems
-- Suitable for local admin and IT support workflows
+- CSV export
+- JSON export
+- HTML report generation
+- Graphical overview with folder usage visualization
+- Treemap-style overview of large folders
+- Error summary for permission or access issues
+- Modern Windows-focused desktop interface
+- py2exe / PyInstaller build files for creating a Windows executable
 
 ---
 
-## File categories
+## Use Cases
 
-waltrone1 SpaceLens groups files into useful categories, for example:
+This tool can be useful for:
 
-- Images
-- Videos
-- Music
-- Documents
-- Office / PDF
-- Archives
-- Backups
-- Programs
-- Games
-- Temp / Logs
-- VM / Images
-- Databases
-- Outlook / Mail
-- CAD / Design
-- Development
-- System / Windows
-- Other files
+- Finding large folders on a drive
+- Finding large files before cleanup
+- Analyzing external drives
+- Checking storage usage on network paths
+- Reviewing old Windows folders
+- Identifying space used by games, videos, backups or virtual machine images
+- Creating storage reports for documentation
+- Preparing cleanup or migration decisions
+- Supporting admin and IT troubleshooting workflows
+- Getting a fast visual overview of storage usage
+
+---
+
+## Project Status
+
+This project is currently available as a public release.
+
+The repository provides source files, documentation, screenshots and build-related files for transparency and community access.
+
+Current version:
+
+```text
+1.0.0.0
+```
 
 ---
 
 ## Download
 
-The easiest way to use waltrone1 SpaceLens is to download the prepared Windows release package.
+You can download the latest release from the GitHub Releases section.
 
-GitHub releases:
-
-```text
-https://github.com/waltrone1/waltrone1-spacelens/releases
-```
-
-Optional support download:
-
-```text
-https://waltrone1.gumroad.com/
-```
-
-The tool is free to use. Gumroad is used for easier downloads and voluntary support.
+A Gumroad download page may also be available for users who prefer a simple download option or want to support the project voluntarily.
 
 ---
 
-## Requirements
-
-For the prebuilt Windows release:
-
-- Windows 10 or Windows 11
-- No Python installation required
-
-For running from source:
-
-- Python 3.10 or newer
-- PySide6
-
-Python dependencies are listed in:
-
-```text
-requirements.txt
-```
-
----
-
-## Run from source
-
-Clone or download the repository, then install the requirements:
-
-```bash
-pip install -r requirements.txt
-```
-
-Start the application with:
-
-```bash
-python run.py
-```
-
----
-
-## Build Windows EXE
-
-A prepared PyInstaller build setup is included in the `py2exe` folder.
-
-To build the Windows EXE:
-
-1. Open the project folder on Windows
-2. Go to the `py2exe` folder
-3. Run:
-
-```bat
-build_exe_windows.bat
-```
-
-The script creates a virtual environment, installs the required packages and builds a single Windows EXE.
-
-Expected output:
-
-```text
-py2exe/dist/waltrone1-SpaceLens.exe
-```
-
----
-
-## Project structure
+## Repository Structure
 
 ```text
 waltrone1-spacelens/
-├─ README.md
-├─ CHANGELOG.md
-├─ LICENSE
-├─ .gitignore
-├─ requirements.txt
-├─ run.py
-├─ version_info.txt
-├─ waltrone1-SpaceLens.ico
-├─ screenshots/
-│  ├─ spacelens-main-dashboard.png
-│  ├─ spacelens-folder-tree.png
-│  ├─ spacelens-graph-view.png
-│  └─ spacelens-html-report.png
-├─ docs/
-├─ py2exe/
-└─ waltrone1_spacelens/
+│
+├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── .gitignore
+│
+├── docs/
+│   └── usage documentation
+│
+├── screenshots/
+│   └── application screenshots
+│
+├── py2exe/
+│   └── build files for creating a Windows executable
+│
+├── waltrone1_spacelens/
+│   └── application source files
+│
+├── requirements.txt
+├── run.py
+├── version_info.txt
+└── waltrone1-SpaceLens.ico
 ```
+
+The `waltrone1_spacelens/` folder contains the application source files.
+
+The `py2exe/` folder contains build-related files for creating a Windows executable.
+
+The `screenshots/` folder contains the images used in this README.
+
+Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
 
 ---
 
-## Repository contents
+## Screenshots
 
-| Path | Description |
-|---|---|
-| `waltrone1_spacelens/` | Main application source code |
-| `run.py` | Application start file |
-| `requirements.txt` | Python dependencies |
-| `py2exe/` | Windows EXE build files |
-| `screenshots/` | Application screenshots |
-| `docs/` | Additional documentation |
-| `version_info.txt` | Windows version information for the EXE |
-| `waltrone1-SpaceLens.ico` | Application icon |
+### Main Window
+
+![Main Window](screenshots/spacelens-main-dashboard.png)
+
+### Folder Tree
+
+![Folder Tree](screenshots/spacelens-folder-tree.png)
+
+### Graph View
+
+![Graph View](screenshots/spacelens-graph-view.png)
+
+### HTML Report
+
+![HTML Report](screenshots/spacelens-html-report.png)
+
+---
+
+## Basic Usage
+
+1. Download the latest release.
+2. Extract the ZIP file.
+3. Start the application.
+4. Select a drive, folder or UNC path.
+5. Start the scan.
+6. Review the folder tree, top folders, top files and categories.
+7. Open the graphical overview if needed.
+8. Export the results as CSV, JSON or HTML report.
+
+---
+
+## Build / Source Notes
+
+The application source files are located in:
+
+```text
+waltrone1_spacelens/
+```
+
+The main start file is:
+
+```text
+run.py
+```
+
+Build-related files for creating a Windows executable are located in:
+
+```text
+py2exe/
+```
+
+Generated build output such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
+
+Final release packages should be published through GitHub Releases.
+
+---
+
+## Safety Notes
+
+waltrone1 SpaceLens is an analysis tool.
+
+It does not automatically delete, move or modify files.
+
+Important notes:
+
+- Large drives can take some time to scan.
+- Protected folders may cause access or permission errors.
+- Network paths can be slower than local drives.
+- Duplicate detection may take longer on large file sets.
+- Always review scan results carefully before deleting or moving files manually.
+- Use only in authorized environments.
 
 ---
 
 ## License
 
-This project is provided under the **WALTRONE Community License**.
+This project is released under the **WALTRONE Community License**.
 
-You are allowed to use the tool for personal, educational and internal administrative purposes.
+You may use this tool for free.
 
-You are not allowed to:
+However, the following is not allowed without written permission:
 
-- sell this tool as your own product
-- rebrand it as your own software
-- commercially redistribute it without permission
-- integrate it into a commercial product or paid service without permission
+- Commercial resale
+- Rebranding
+- Selling modified versions
+- Commercial integration into paid products or services
+- Republishing the project under another name
+- Removing WALTRONE branding or author information
 
 For details, see the `LICENSE` file.
+
+---
+
+## About WALTRONE
+
+**WALTRONE** is a GitHub and community project focused on small, useful tools for Windows, automation, productivity and system management.
+
+GitHub handle / domain identity:
+
+```text
+waltrone1
+```
+
+Project brand:
+
+```text
+WALTRONE
+```
+
+---
+
+## Support
+
+This tool is free to use.
+
+If you find it useful, you may support the project voluntarily through the official WALTRONE download/support page.
 
 ---
 
@@ -233,35 +233,6 @@ For details, see the `LICENSE` file.
 
 This tool is provided as-is, without warranty of any kind.
 
-waltrone1 SpaceLens is an analysis tool. It does not automatically delete files.
+Use it at your own risk.
 
-Always review scan results carefully before deleting, moving or changing files on your system.
-
----
-
-## Links
-
-GitHub repository:
-
-```text
-https://github.com/waltrone1/waltrone1-spacelens
-```
-
-GitHub profile:
-
-```text
-https://github.com/waltrone1
-```
-
-WALTRONE website:
-
-```text
-https://waltrone1.de/
-```
-
----
-
-## Author
-
-Created by **WALTRONE**  
-GitHub / Handle: **waltrone1**
+The author is not responsible for data loss, system issues, incorrect scan results, cleanup decisions, deleted files or damages caused by the use of this software.
