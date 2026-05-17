@@ -8,6 +8,28 @@ The tool is designed for Windows users, admins and technicians who want a clear 
 
 ---
 
+## Screenshots
+
+The screenshots show the main dashboard, folder tree analysis, graphical storage overview and generated HTML report.
+
+### Main Dashboard
+
+![Main Dashboard](screenshots/spacelens-main-dashboard.png)
+
+### Folder Tree
+
+![Folder Tree](screenshots/spacelens-folder-tree.png)
+
+### Graph View
+
+![Graph View](screenshots/spacelens-graph-view.png)
+
+### HTML Report
+
+![HTML Report](screenshots/spacelens-html-report.png)
+
+---
+
 ## Features
 
 - Windows storage analysis for folders and drives
@@ -84,7 +106,10 @@ waltrone1-spacelens/
 │   └── usage documentation
 │
 ├── screenshots/
-│   └── application screenshots
+│   ├── spacelens-main-dashboard.png
+│   ├── spacelens-folder-tree.png
+│   ├── spacelens-graph-view.png
+│   └── spacelens-html-report.png
 │
 ├── py2exe/
 │   └── build files for creating a Windows executable
@@ -105,26 +130,6 @@ The `py2exe/` folder contains build-related files for creating a Windows executa
 The `screenshots/` folder contains the images used in this README.
 
 Generated files such as `.exe`, `.zip`, `build/`, `dist/` or release folders should not be committed directly to the repository.
-
----
-
-## Screenshots
-
-### Main Window
-
-![Main Window](screenshots/spacelens-main-dashboard.png)
-
-### Folder Tree
-
-![Folder Tree](screenshots/spacelens-folder-tree.png)
-
-### Graph View
-
-![Graph View](screenshots/spacelens-graph-view.png)
-
-### HTML Report
-
-![HTML Report](screenshots/spacelens-html-report.png)
 
 ---
 
